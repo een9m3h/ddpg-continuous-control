@@ -8,9 +8,10 @@ As you've seen, the environment for this project involves controlling a double-j
 Watch this YouTube video to see how some researchers were able to train a similar task on a real robot! The accompanying research paper can be found here.
 
 Training robotic arm to reach target locations in the real world.
-<a href="https://www.youtube.com/watch?v=ZVIxt2rt1_4
-" target="_blank"><img src="https://www.youtube.com/watch?v=ZVIxt2rt1_4/0.jpg" 
-alt=Training robotic arm to reach target locations in the real world." width="240" height="180" border="10" /></a>
+
+[![Training robotic arm to reach target locations in the real world](http://img.youtube.com/vi/ZVIxt2rt1_4/0.jpg)](https://www.youtube.com/watch?v=ZVIxt2rt1_4)
+
+
 
 
 #### Sharing Experience
