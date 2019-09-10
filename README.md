@@ -60,3 +60,32 @@ Then, Place the file in the DRLND GitHub repository, in the `p1_navigation/` fol
 After you have followed the instructions above, open Continuous_Control.ipynb (located in the p2_continuous-control/ folder in the DRLND GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
 
 Watch the (silent) video below to see what kind of output to expect from the notebook (for version 2 of the environment), if everything is working properly! Version 1 will look very similar (where you'll see a single agent, instead of 20!).
+
+
+## Problem Statement
+
+### Summary of Environment
+- Set-up: Double-jointed arm which can move to target locations.
+- Goal: Each agent must move its hand to the goal location, and keep it there.
+- Agents: The environment contains 20 agents linked to a single Brain.
+- Agent Reward Function (independent):
+  - +0.1 for each timestep agent's hand is in goal location.
+- Brains: One Brain with the following observation/action space.
+  - Vector Observation space: 33 variables corresponding to position, rotation, velocity, and angular velocities of the two arm Rigidbodies.
+  - Vector Action space: (Continuous) Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+  - Visual Observations: None.
+- Reset Parameters: Two, corresponding to goal size, and goal movement speed.
+- Benchmark Mean Reward: 30
+
+### Solving the Environment
+Note that your project submission need only solve one of the two versions of the environment.
+
+#### Option 1: Solve the First Version
+The task is episodic, and in order to solve the environment, your agent must get an average score of +30 over 100 consecutive episodes.
+
+#### Option 2: Solve the Second Version
+The barrier for solving the second version of the environment is slightly different, to take into account the presence of many agents. In particular, your agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). Specifically,
+
+After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
+This yields an average score for each episode (where the average is over all 20 agents).
+The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30.
