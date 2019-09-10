@@ -19,6 +19,8 @@ In the second version of the project environment, there are 20 identical copies 
 
 Sharing experience can accelerate learning.
 
-<img src="assets/robot-pickers.gif" width="60%" align="top-left" alt="" title="Robot Arms" />
+![Trained Agent][https://video.udacity-data.com/topher/2018/June/5b35985b_image8/image8.gif]
 
 *Photo credit: [Google AI Blog](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html)*
+
+
